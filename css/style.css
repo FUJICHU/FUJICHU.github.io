@@ -1,0 +1,220 @@
+.heander {
+    font-weight: 700;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Hright{
+    display: flex;
+    align-items: center;
+}
+.Hright  div {
+    margin: 0 3px;
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+.w-head {
+	background: #e6a23f;
+	padding-bottom: 10px;
+}
+.w-head p{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: flex-center;
+    -ms-flex-pack: center;
+    justify-content:center;
+}
+.w-head .head-h1{
+	background: #d4693f;
+	color: #fff;
+	font-size: 16px;
+	padding:10px 0;
+}
+.w-head .head-h2{
+	color: #cf7e15;
+	font-size: 48px;
+	font-weight: 800;
+	letter-spacing: 4px;
+	padding:10px 0 0 0;
+	text-shadow: #fff 0 3px 0 0, #fff 0 3px 0, #fff -2px 0 0, #fff 0 -3px 0;
+}
+.w-head .head-h3{
+    width: 46%;
+    margin-left: 27%;
+	color: #fff;
+	font-size: 16px;
+    background:url(../images/more.png);
+    background-size: 30px 100%;
+    background-position: center;
+
+}
+.w-head .head-h3 span{
+    background: #e6a23f;
+    padding:0 8px;
+}
+.w-body{
+	padding:20px 10px 50px 10px;
+}
+.w-body .body-head{
+	font-size: 16px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.w-body .body-head .head-left{
+	width: 50%;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+	flex-direction: column;
+	-webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content:start;
+}
+
+.w-body .body-head .head-right{
+	width: 50%;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: flex-center;
+    -ms-flex-pack: center;
+    justify-content:center;
+}
+.w-body .body-head .head-left .head-h1{
+	width: 100%;
+	color: #777;
+	
+}
+.w-body .body-head .head-left .head-h2{
+    font-weight: 600;
+	width: 100%;
+	color: #d6643d;
+}
+.w-body .body-head .head-right img{
+	width: 160px;
+	height: 160px;
+}
+.w-body .body-body{
+	padding:50px 10px 0 10px;
+}
+.w-body .body-count{
+	color: #d6643d;
+	font-size: 20px;
+	font-weight: 600;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content:center;
+}
+.w-body .body-count>div{
+	border: 3px solid #d4693f;
+	padding:0 3px;
+	letter-spacing: 2px;
+	-webkit-box-shadow:0px 5px 3px #ae6940;
+ 	-moz-box-shadow:0px 5px 3px #ae6940;
+ 	box-shadow:0px 5px 3px #ae6940;
+}
+.w-body .body-count>span{
+	min-width: 20px;
+	font-size: 12px;
+	color: #777;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content:center;
+}
+.w-body .body-text{
+    width: 80%;
+    background:url(../images/line.png);
+    background-position: center;
+    background-size: 100% 100%;
+	font-size: 14px;
+	color: #cf7e15;
+	margin:20px 0 30px 10%;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content:center;
+}
+.w-body .body-text p{
+    background: #fff;
+    padding:0 8px;
+}
+.w-body .body-foot{
+	text-align: center;
+}
+.w-body .foot-h1{
+	color: #d6643d;
+	font-size: 18px;
+	font-weight: 600;
+}
+.w-body .foot-h2{
+	color: #cf7e15;
+	font-size: 12px;
+	font-weight: 400;
+    
+}
+.w-foot{
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	padding:10px 0;
+	background: #d4693f;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.shcool {
+    font-weight: 600;
+}
