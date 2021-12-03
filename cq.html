@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>通行证</title>
+	<link href="css/a.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/a.css">
+	<link rel="stylesheet" type="text/css" href="css/b.css">
+</head>
+
+<body>
+	<div id="app">
+		<div data-v-34992c4c="" class="content warn">
+			<div data-v-34992c4c="" class="card">
+				<p data-v-34992c4c="" class="school-name">闽江师范高等专科学校</p>
+				<header data-v-34992c4c=""><img data-v-34992c4c="" src="images/passport_bg0.png" alt=""
+						class="bg"><img data-v-34992c4c="" src="images/passport_zh0.png" alt="" class="font-zh"><img
+						data-v-34992c4c="" src="images/passport_en.png" alt="" class="font-en"></header>
+				<main data-v-34992c4c="">
+					<div data-v-34992c4c="" class="van-row">
+						<div data-v-34992c4c="" class="van-col van-col--12">
+							<p data-v-34992c4c="" class="label">学生 / Name: </p>
+							<p data-v-34992c4c=""> 曹鹤 </p>
+							<div data-v-34992c4c="">
+								<p data-v-34992c4c="" class="label">学号 / No:</p>
+								<p data-v-34992c4c="">2008260138 </p>
+							</div>
+							<p data-v-34992c4c="" class="label">有效期 / Time:</p>
+							<p id="date1" data-v-34992c4c="">2022-1-3止</p>
+						</div>
+						<!-- LOGO -->
+						<div data-v-34992c4c="" class="van-col van-col--12">
+							<img data-v-34992c4c=""	src="images/201910101509024467e425-b89c-4383-8b3e-79b76016d4d5.png" alt="">
+						</div>
+					</div>
+				</main>
+				<footer data-v-34992c4c="">
+					<div data-v-34992c4c="" class="body-count timer-box van-count-down " id="fnTimeCountDown">
+						<span data-v-34992c4c="" class="block bg-box-2"><em id="time_hours" class="hour" data-v-34992c4c="">09</em></span><span data-v-34992c4c="" class="colon">:</span>
+						<span data-v-34992c4c="" class="block bg-box-2"><em id="time_minutes" class="mini" data-v-34992c4c="">42</em></span><span
+							data-v-34992c4c="" class="colon">:</span><span data-v-34992c4c="" class="block bg-box-2"><em id="time_seconds"
+								class="sec"	data-v-34992c4c="">45</em></span><span data-v-34992c4c="" class="colon">:</span><span data-v-34992c4c=""
+							class="block w-3 bg-box-3"><em data-v-34992c4c="" class="hm" id="time_milliseconds">118</em></span></div>
+					<div id="date2" role="separator" data-v-34992c4c=""
+						class="body-text divider van-divider van-divider--hairline van-divider--content-center"
+						style="color: rgb(212, 106, 60);"><p> 2021年<span class="end-month"></span>月<span class="end-day"></span>日</p></div>
+					<p data-v-34992c4c="">校园安全, 共同守护</p>
+					<p data-v-34992c4c="">Campus security responsibility</p>
+				</footer>
+				<div data-v-34992c4c="" class="footer">
+					<p data-v-34992c4c="" class="company">©2016-2020 by www.cezone.cn All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+	<script>
+		function dateFormat(fmt, date) {
+			let ret;
+			const opt = {
+				"Y+": date.getFullYear().toString(),        // 年
+				"m+": (date.getMonth() + 1).toString(),     // 月
+				"d+": (date.getDate() + 1).toString(),      // 日
+				// 有其他格式化字符需求可以继续添加，必须转化成字符串
+			};
+			for (let k in opt) {
+				ret = new RegExp("(" + k + ")").exec(fmt);
+				if (ret) {
+					fmt = fmt.replace(ret[1], (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0")))
+				};
+			};
+			return fmt;
+		}
+		let date = new Date()
+	
+		$("#nowDate").html(dateFormat("YYYY-mm-dd", date))
+	
+	</script>
+	<script type="text/javascript">
+		$.extend($.fn, {
+			fnTimeCountDown: function () {
+				this.each(function () {
+					var $this = $(this);
+					var myDate = new Date;
+					var todayYear = myDate.getFullYear();
+					var todayMonth = myDate.getMonth();
+					var todayDay = myDate.getDate();
+					var todayTime = (new Date(todayYear, todayMonth, todayDay, '23', '59', '59')).getTime();
+	
+					$('.end-month').html(todayMonth + 1)
+					$('.end-day').html(todayDay)
+					var o = {
+						hm: $this.find(".hm"),
+						sec: $this.find(".sec"),
+						mini: $this.find(".mini"),
+						hour: $this.find(".hour"),
+	
+					};
+					var f = {
+						haomiao: function (n) {
+							if (n < 10) return "00" + n.toString();
+							if (n < 100) return "0" + n.toString();
+							return n.toString();
+						},
+						zero: function (n) {
+							var _n = parseInt(n, 10);
+							if (_n > 0) {
+								if (_n <= 9) {
+									_n = "0" + _n
+								}
+								return String(_n);
+							} else {
+								return "00";
+							}
+						},
+						dv: function () {
+							var now = new Date(),
+								endDate = new Date(todayTime);
+							// console.log(endDate)
+							var dur = (now.getTime()) / 1000, mss = now.getTime(), pms = {
+								hm: "000",
+								sec: "00",
+								mini: "00",
+								hour: "00",
+							};
+							if (mss > 0) {
+								pms.hm = f.haomiao(mss % 1000);
+								pms.sec = f.zero(dur % 60);
+								pms.mini = Math.floor((dur / 60)) > 0 ? f.zero(Math.floor((dur / 60)) % 60) : "00";
+								pms.hour = Math.floor((dur / 3600)) > 0 ? new Date().getHours() : "00";
+							}
+							if (todayMonth == 6 && todayDay == 16) {
+								alert('已过有效期！');
+								return;
+	
+							}
+	
+	
+	
+							return pms;
+						},
+						ui: function () {
+							if (o.hm) {
+								o.hm.html(f.dv().hm);
+							}
+							if (o.sec) {
+								o.sec.html(f.dv().sec);
+							}
+							if (o.mini) {
+								o.mini.html(f.dv().mini);
+							}
+							if (o.hour) {
+								o.hour.html(f.dv().hour);
+							}
+	
+							setTimeout(f.ui, 1);
+						}
+	
+					};
+					f.ui();
+	
+				});
+			}
+		});
+	
+	
+		$("#fnTimeCountDown").fnTimeCountDown();
+	</script>
+
+</body>
+
+</html>
