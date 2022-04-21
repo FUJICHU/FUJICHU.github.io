@@ -32,7 +32,7 @@
 								<p data-v-34992c4c="">1906040213 </p>
 							</div>
 							<p data-v-34992c4c="" class="label">有效期 / Time:</p>
-							<p id="date1" data-v-34992c4c="">2022-<span class="end-month"></span>-<span class="end-day"></span>止</p>
+							<p id="date1" data-v-34992c4c=""><span class="end-year"></span>-<span class="end-month"></span>-<span class="end-day"></span>止</p>
 						</div>
 						<!-- LOGO -->
 						<div data-v-34992c4c="" class="van-col van-col--12">
@@ -95,6 +95,7 @@
 					var todayDay = myDate.getDate();
 					var todayTime = (new Date(todayYear, todayMonth, todayDay, '23', '59', '59')).getTime();
 	
+					$('.end-year').html(todayMonth)
 					$('.end-month').html(todayMonth + 1)
 					$('.end-day').html(todayDay)
 					var o = {
