@@ -95,6 +95,7 @@
 					var todayDay = myDate.getDate();
 					var todayTime = (new Date(todayYear, todayMonth, todayDay, '23', '59', '59')).getTime();
 	
+					$('.end-year').html(todayYear + 1)
 					$('.end-month').html(todayMonth + 1)
 					$('.end-day').html(todayDay)
 					var o = {
