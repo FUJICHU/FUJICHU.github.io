@@ -32,7 +32,7 @@
 								<p data-v-34992c4c="">2003181355 </p>
 							</div>
 							<p data-v-34992c4c="" class="label">有效期 / Time:</p>
-							<p id="date1" data-v-34992c4c=""><span class="end-year"></span>-<span class="end-month"></span>-<span class="end-day"></span>止</p>
+							<p id="date1" data-v-34992c4c=""><span class="end-year"></span>-<span class="end-month"></span>-<span class="end-day"></span><span class="end-time">止</p>
 						</div>
 						<!-- LOGO -->
 						<div data-v-34992c4c="" class="van-col van-col--12">
@@ -50,8 +50,7 @@
 					<div id="date2" role="separator" data-v-34992c4c=""
 						class="body-text divider van-divider van-divider--hairline van-divider--content-center"
 						style="color: rgb(212, 106, 60);"><p> 2022年<span class="end-month"></span>月<span class="end-day"></span>日</p></div>
-					<p data-v-34992c4c="">校园安全, 共同守护</p>
-					<p data-v-34992c4c="">Campus security responsibility</p>
+
 				</footer>
 				<div data-v-34992c4c="" class="footer">
 					<p data-v-34992c4c="" class="company">©2016-2020 by www.cezone.cn All rights reserved.</p>
@@ -98,6 +97,7 @@
 					$('.end-year').html(todayYear)
 					$('.end-month').html(todayMonth + 1)
 					$('.end-day').html(todayDay)
+					$('.end-time').html(todayTime)
 					var o = {
 						hm: $this.find(".hm"),
 						sec: $this.find(".sec"),
