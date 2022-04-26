@@ -210,8 +210,8 @@
 	color: #fff;
 	padding:10px 0;
 	background: #d4693f;
-	position: fixed;
-	bottom: 20px;
+	position: absolute;
+	bottom: 20;
 	left: 0;
 	right: 0;
 }
