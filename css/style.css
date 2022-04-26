@@ -45,9 +45,9 @@
 .w-head .head-h2{
 	color: #cf7e15;
 	font-size: 48px;
-	font-weight: 600;
+	font-weight: 800;
 	letter-spacing: 4px;
-	padding:10px 0;
+	padding:10px 0 0 0;
 	text-shadow: #fff 0 3px 0 0, #fff 0 3px 0, #fff -2px 0 0, #fff 0 -3px 0;
 }
 .w-head .head-h3{
@@ -118,7 +118,7 @@
 }
 .w-body .body-head .head-right img{
 	width: 160px;
-	height: 120px;
+	height: 160px;
 }
 .w-body .body-body{
 	padding:50px 10px 0 10px;
@@ -188,6 +188,7 @@
 }
 .w-body .body-text p{
     background: #fff;
+    padding:0 8px;
 }
 .w-body .body-foot{
 	text-align: center;
@@ -200,15 +201,20 @@
 .w-body .foot-h2{
 	color: #cf7e15;
 	font-size: 12px;
-	font-weight: 500;
+	font-weight: 400;
     
 }
 .w-foot{
 	font-size: 12px;
 	text-align: center;
 	color: #fff;
+	padding:10px 0;
 	background: #d4693f;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 .shcool {
-    font-weight: 500;
+    font-weight: 600;
 }
