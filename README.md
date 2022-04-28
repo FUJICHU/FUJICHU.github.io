@@ -1,1 +1,2 @@
-# FUJICHU.github.io
+#这个一个简单的自制html5页面
+#可以直接手机微信打开
