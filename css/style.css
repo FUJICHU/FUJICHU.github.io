@@ -751,7 +751,7 @@ footer[data-v-pass] {
     flex-grow: 1;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-top: 4.333vw;
+    padding-top: 3.333vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -762,7 +762,7 @@ footer[data-v-pass] {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    content: "viewport-units-buggyfill; padding-top: 4.333vw"
+    content: "viewport-units-buggyfill; padding-top: 3.333vw"
 }
 
 footer .date[data-v-pass] {
