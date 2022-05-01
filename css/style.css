@@ -768,8 +768,8 @@ footer[data-v-pass] {
 footer .date[data-v-pass] {
     color: #d46a3c;
     font-size: 6.4vw;
-    margin-bottom: 2.133vw;
-    content: "viewport-units-buggyfill; font-size: 6.4vw; margin-bottom: 2.133vw"
+    margin-bottom: 3.863vw;
+    content: "viewport-units-buggyfill; font-size: 6.4vw; margin-bottom: 3.863vw"
 }
 
 .block[data-v-pass] {
@@ -858,11 +858,11 @@ footer .date[data-v-pass] {
     top: 0;
     color: #d46a3c;
     font-size: 9.6vw;
-    line-height: 12.8vw;
+    line-height: 16vw;
     letter-spacing: 1.067vw;
     text-indent: 1.067vw;
     font-style: normal;
-    content: "viewport-units-buggyfill; font-size: 9.6vw; line-height: 12.8vw; letter-spacing: 1.067vw; text-indent: 1.067vw"
+    content: "viewport-units-buggyfill; font-size: 9.6vw; line-height: 16vw; letter-spacing: 1.067vw; text-indent: 1.067vw"
 }
 
 .timer-box[data-v-pass] {
