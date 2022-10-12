@@ -17,7 +17,7 @@ function set_date(){
     var year=PrefixInteger(today.getFullYear(),4);
     var month=PrefixInteger((today.getMonth()+1),2);
     var date=PrefixInteger(today.getDate(),2);
-    document.getElementById("date1").innerHTML=year+"-"+month+"-"+date+" 20:00止";
+    document.getElementById("date1").innerHTML=year+"-"+month+"-"+date+" 22:00止";
     document.getElementById("date2").innerHTML=year+"年"+month+"月"+date+"日";
 }
 setInterval("set_date()");
